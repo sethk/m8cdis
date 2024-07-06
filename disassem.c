@@ -158,7 +158,7 @@ static instruction_t instructions [] =
 
   { "add   SP,%03xh",              5, 2, 0x38, disassemHandler_srcIMM },
   { "cmp   A,%03xh",               5, 2, 0x39, disassemHandler_srcIMM },
-  { "cmp   A,[%s]",                7, 3, 0x3a, disassemHandler_srcDIR },
+  { "cmp   A,[%s]",                7, 2, 0x3a, disassemHandler_srcDIR },
   { "cmp   A,[X+%s]",              8, 2, 0x3b, disassemHandler_srcIDX },
   { "cmp   [%s],%03xh",            8, 3, 0x3c, disassemHandler_dstDIR_srcIMM },
   { "cmp   [X+%s],%03xh",          9, 3, 0x3d, disassemHandler_dstIDX_srcIMM },
